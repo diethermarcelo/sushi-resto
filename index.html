@@ -5,38 +5,67 @@
         <meta charset="utf-8">
         <meta name="author" content="Diether Marcelo">
         <meta name="description" content="SushiResto Website">
-        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="follow">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     </head>
     <body>
         <header class="fixed">
-            <div class="container"> 
-                <div class="navigations flex flex-align-center flex-between">
-                    <div class="logo">
-                        <a href="" class="flex flex-align-center">
-                            <img src="./assets/images/logo.png" alt="">
-                            <span class="logo-title"> SushiResto </span>
-                        </a>
+            <div class="container">
+                <div class="mobile md-none flex flex-between flex-align-center">
+                    <div class="logo flex flex-align-center">
+                        <img src="./assets/images/logo.png" alt="">
+                        <span class="logo-title"> SushiResto </span>
                     </div>
-                    <div class="navs flex flex-align-center">
-                        <nav>
-                            <ul class="flex">
-                                <li><a href="#"> Home </a></li>
-                                <li><a href="#"> Product </a></li>
-                                <li><a href="#">Promo </a></li>
-                                <li><a href="#"> About </a></li>
-                                <li><a href="#"> Contact </a></li>
-                            </ul>
-                        </nav>
-                        <div class="search pl-3">
-                            <button>
-                                <img src="./assets/images/Search.png" alt="">
+                    <div class="burger-container">
+                        <div class="burger-icon">
+                            <button class="flex flex-center">
+                                <img src="./assets/images/burger.png" alt="">
                             </button>
+                        </div>
+                        <div class="nav-container absolute">
+                            <button class="close py-2 px-3 absolute">
+                                <img src="./assets/images/close.png" alt="">
+                            </button>
+                            <nav>
+                                <ul class="flex flex-column flex-align-center flex-center">
+                                    <li><a href="#"> Home </a></li>
+                                    <li><a href="#"> Product </a></li>
+                                    <li><a href="#"> Promo </a></li>
+                                    <li><a href="#"> About </a></li>
+                                    <li><a href="#"> Contact </a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
+                <div class="desktop none md-block">
+                    <div class="navigations flex flex-align-center flex-between">
+                        <div class="logo">
+                            <a href="" class="flex flex-align-center">
+                                <img src="./assets/images/logo.png" alt="">
+                                <span class="logo-title"> SushiResto </span>
+                            </a>
+                        </div>
+                        <div class="navs flex flex-align-center">
+                            <nav>
+                                <ul class="flex">
+                                    <li><a href="#"> Home </a></li>
+                                    <li><a href="#"> Product </a></li>
+                                    <li><a href="#">Promo </a></li>
+                                    <li><a href="#"> About </a></li>
+                                    <li><a href="#"> Contact </a></li>
+                                </ul>
+                            </nav>
+                            <div class="search pl-3">
+                                <button>
+                                    <img src="./assets/images/Search.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </header>
 
@@ -44,7 +73,7 @@
             <div class="container">
                 <div class="center">
                     <div class="row content">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <h1 class="section-title"> The #1 sushi restaurant is back! </h1>
                             <p class="section-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
                             <button class="order-now"> Order Now </button>
@@ -61,32 +90,39 @@
                         <h1 class="section-title"> Popular Menu </h1>
                         <p class="section-subcontent section-half-width-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.  </p>
                     </div>
-                    <div class="flex menus py-3">
-                        <div class="menu-container px-4">
-                            <div class="menu-img">
-                                <img src="./assets/images/Sushi-1.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="menu-content">
-                                <h2 class="menu-title"> Sample Sushi #1 </h2>
-                                <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                        <div class="menu-container px-4">
-                            <div class="menu-img">
-                                <img src="./assets/images/Sushi-2.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="menu-content">
-                                <h2 class="menu-title"> Sample Sushi #2 </h2>
-                                <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="row menus py-3">
+                        <div class="col-md">
+                            <div class="menu-container px-4">
+                                <div class="menu-img">
+                                    <img src="./assets/images/Sushi-1.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="menu-content">
+                                    <h2 class="menu-title"> Sample Sushi #1 </h2>
+                                    <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu-container px-4">
-                            <div class="menu-img">
-                                <img src="./assets/images/Sushi-3.png" class="img-responsive" alt="">
+                        <div class="col-md">
+                            <div class="menu-container px-4">
+                                <div class="menu-img">
+                                    <img src="./assets/images/Sushi-2.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="menu-content">
+                                    <h2 class="menu-title"> Sample Sushi #2 </h2>
+                                    <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
-                            <div class="menu-content">
-                                <h2 class="menu-title"> Sample Sushi #3 </h2>
-                                <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+                        </div>
+                        <div class="col-md">
+                            <div class="menu-container px-4">
+                                <div class="menu-img">
+                                    <img src="./assets/images/Sushi-3.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="menu-content">
+                                    <h2 class="menu-title"> Sample Sushi #3 </h2>
+                                    <p class="menu-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,13 +132,13 @@
         
         <div class="main-sections featured-products first-featured bg-img bg-secondary">
             <div class="container center">
-                <div class="row">
-                    <div class="col">
+                <div class="row content">
+                    <div class="col-md">
                         <div class="featured-img">
                             <img src="./assets/images/Featured-1-Sushi.png" alt="" class="img-responsive">
                         </div>
                     </div>
-                    <div class="col align-center">
+                    <div class="col-md align-center">
                         <h1 class="section-title"> Sample Sushi #1 </h1>
                         <p class="section-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.  </p>
                         <button class="order-now mt-3"> Order Now </button>
@@ -118,18 +154,24 @@
                         <h1 class="section-title"> Statistics </h1>
                         <p class="section-subcontent section-half-width-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
                     </div>
-                    <div class="stats flex flex-center pt-3">
-                        <div class="statistic">
-                            <h2> 123 </h2>
-                            <span> Store </span>
+                    <div class="stats row flex-center pt-3">
+                        <div class="col">
+                            <div class="statistic">
+                                <h2> 123 </h2>
+                                <span> Store </span>
+                            </div>
                         </div>
-                        <div class="statistic">
-                            <h2> 100 </h2>
-                            <span> Menu </span>
+                        <div class="col">
+                            <div class="statistic">
+                                <h2> 100 </h2>
+                                <span> Menu </span>
+                            </div>
                         </div>
-                        <div class="statistic">
-                            <h2> 200 </h2>
-                            <span> Chef </span>
+                        <div class="col">
+                            <div class="statistic">
+                                <h2> 200 </h2>
+                                <span> Chef </span>
+                            </div>
                         </div>
                     </div>                    
                 </div>
@@ -138,16 +180,16 @@
 
         <div class="main-sections featured-products second-featured bg-img bg-secondary">
             <div class="container center">
-                <div class="row">
-                    <div class="col align-center">
-                        <h1 class="section-title"> Sample Sushi #2 </h1>
-                        <p class="section-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-                        <button class="order-now mt-3"> Order Now </button>
-                    </div>
-                    <div class="col">
+                <div class="row content">
+                    <div class="col-md">
                         <div class="featured-img">
                             <img src="./assets/images/Featured-2-Sushi.png" alt="" class="img-responsive">
                         </div>
+                    </div>
+                    <div class="col-md align-center">
+                        <h1 class="section-title"> Sample Sushi #2 </h1>
+                        <p class="section-subcontent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+                        <button class="order-now mt-3"> Order Now </button>
                     </div>
                 </div>
             </div>
@@ -187,8 +229,8 @@
         <footer class="bg-dark white-texts">
             <div class="container">
                 <div class="center">
-                    <div class="row">
-                        <div class="col-4 footer-nav-logo">
+                    <div class="row text-center md-text-left">
+                        <div class="col-12 col-md-4 footer-nav-logo">
                             <h2> SushiResto </h2>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.  </p>
                             <ul class="social-medias flex">
@@ -198,7 +240,7 @@
                                 <li class="social-media"> <a href=""> <img src="./assets/images/WhatsApp.png" alt=""></a> </li>
                             </ul>
                         </div>
-                        <div class="col offset-1">
+                        <div class="col-12 col-md offset-md-1">
                             <h2> About </h2>
                             <nav>   
                                 <ul> 
@@ -210,7 +252,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md">
                             <h2> Services </h2>
                             <nav>   
                                 <ul> 
@@ -222,7 +264,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md">
                             <h2> Other </h2>
                             <nav>   
                                 <ul> 
